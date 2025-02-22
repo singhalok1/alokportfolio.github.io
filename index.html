@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Singh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/proj_1.jpeg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <!-- Rotating Text -->
+                <div class="rotating-container">
+                    <p class="rotating-text">Data Analyst</p>
+                    <p class="rotating-text">Student</p>
+                </div>
+                <h1>NAMASTE, I'm <span id="popup-name">Alok Singh</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about_me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a Data Analyst with expertise in Power BI,Tableau,SQL,and Excel, turning raw data into actionable insights.
+                         Passionate about data visualization and analytics, I help businesses make smarter, data-driven decisions. 
+                         Always eager to learn and innovate, I strive to bring efficiency and clarity through data.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('Freshers', event)">Freshers</p>
+                        <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Power BI</span><br>Business intelligence & interactive dashboard development</li>
+                            <li><span>Tableau</span><br>Data visualization & actionable insight generation</li>
+                            <li><span>SQL</span><br>Database querying & relational data management</li>
+                            <li><span>Excel</span><br>Advanced spreadsheet modeling & data analysis</li>
+                            <li><span>Python</span><br>Data automation, predictive analytics & machine learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Freshers">
+                        <ul>  
+                            <li><span>Data Analytics</span><br>Statistical modeling & data-driven decision-making</li>  
+                            <li><span>Excel</span><br>Advanced data manipulation & scenario analysis (PivotTables, VBA)</li>  
+                            <li><span>Power BI</span><br>Interactive dashboard design & business intelligence reporting</li>  
+                            <li><span>Tableau</span><br>Advanced data visualization & insight-driven storytelling</li>  
+                        </ul>  
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019</span><br>SSC[St John's High School</li>
+                            <li><span>2021</span><br>HSC[Thakur College of Sci &Commerece]</li>
+                            <li><span>2024</span><br>BSC-IT[Thakur College of Sci &Commerce]</li>
+                            <li><span>2024 & 2025</span><br>Persuing Data Analysis & Data Scientist[IT Vedant] </Data></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Maharashtra Assembly Election 2024 Result  </h2>
+                    <p></p>
+                    <a href="https://public.tableau.com/app/profile/alok.singh1710/viz/electionproject/Dashboard1" class="btn">Tableau</a>
+                </div>
+                <div>
+                    <h2>Credit Card Transaction Report </h2>
+                    <p></p>
+                    <a href="https://app.powerbi.com/groups/me/reports/40038900-9a53-47cf-bb8d-9f0b118fe694/b158861bbf3d4b9e878a?experience=power-bi" class="btn">Power Bi</a>
+                </div>
+                <div>
+                    <h2>Project Loading...</h2>
+                    <p></p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:Alok7singh1@gmail.com">Alok7singh1@gmail.com</a></p>
+                    <p><a href="tel:9321457477">9321457477</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/invites/contact/?igsh=1xw1n6zu4mb4p&utm_content=7k9u5xw" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/alok-singh-06bb01249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/singhalok1" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="images/Aloksingh_resume jan-1.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="copyright">
+        <p>Copyright © Alok. Made with ❤️ by Alok Singh</p>
+    </div>
+
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Tab Switching
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Google Form Submission
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Y0HYyp_wR4KnVS6e1GNcpjMvgV6rRBZ4jzjifSkFRBtopcfaftSwY5zGRFidbsE/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
